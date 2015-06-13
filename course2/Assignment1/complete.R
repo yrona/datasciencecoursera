@@ -17,7 +17,6 @@ complete <- function(directory, id = 1:332) {
   
   #We define an empty NULL vector that will collect pollutant readings
   myobstally = c()
-  myimportantcols = c("sulfate","nitrate")  #For now we hardcode the columns we care about
     
   for (cdatafile in  mydatafiles) { #We iterate through the each file in the vector of filenames
     
