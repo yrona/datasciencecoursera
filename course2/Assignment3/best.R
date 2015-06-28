@@ -3,7 +3,11 @@ best <- function(state, outcome) {
   ## Check that state and outcome are valid
   ## Return hospital name in that state with lowest 30-day death
   ## rate
+  
+    if (!(outcome %in% c("pneumonia", "heart attack","heart failure"))) {
+      stop("invalid outcome")
 
+    }
 
     #We first read the data file
     x <- read.csv("rprog_data_ProgAssignment3-data/outcome-of-care-measures.csv", colClasses = "character")
@@ -48,6 +52,10 @@ best <- function(state, outcome) {
     #We then merge the results
     outcome.of.care.data <- Reduce(rbind,result.list)
     
+    #Now we can 
+    if (!(state %in% end.result$State)) {
+      stop("invalid state")
+    }   
   
   as.character(outcome.of.care.data[outcome.of.care.data$State==state,outcome])
 }
