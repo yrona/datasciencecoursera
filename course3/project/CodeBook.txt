@@ -1,0 +1,103 @@
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The Subjects contain the subject performing the activity
+
+The Activity column containst the type of activity being performed:
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+Each record in the dataset consists of no more than one entry for each subject and activity.  Each observation is the mean value observed for that column in the original raw data where that subject was performing that activity
+
+Subject           Subject ID
+Activity          Activity code
+tBodyAcc.mean.X    Floating point value
+tBodyAcc.mean.Y    Floating point value
+tBodyAcc.mean.Z    Floating point value
+tGravityAcc.mean.X    Floating point value
+tGravityAcc.mean.Y    Floating point value
+tGravityAcc.mean.Z    Floating point value
+tBodyAccJerk.mean.X    Floating point value
+tBodyAccJerk.mean.Y    Floating point value
+tBodyAccJerk.mean.Z    Floating point value
+tBodyGyro.mean.X    Floating point value    
+tBodyGyro.mean.Y    Floating point value
+tBodyGyro.mean.Z    Floating point value
+tBodyGyroJerk.mean.X    Floating point value
+tBodyGyroJerk.mean.Y    Floating point value
+tBodyGyroJerk.mean.Z    Floating point value
+tBodyAccMag.mean    Floating point value
+tGravityAccMag.mean    Floating point value
+tBodyAccJerkMag.mean    Floating point value
+tBodyGyroMag.mean    Floating point value
+tBodyGyroJerkMag.mean    Floating point value
+fBodyAcc.mean.X    Floating point value
+fBodyAcc.mean.Y    Floating point value
+fBodyAcc.mean.Z    Floating point value
+fBodyAcc.meanFreq.X    Floating point value
+fBodyAcc.meanFreq.Y    Floating point value
+fBodyAcc.meanFreq.Z    Floating point value
+fBodyAccJerk.mean.X    Floating point value
+fBodyAccJerk.mean.Y    Floating point value
+fBodyAccJerk.mean.Z    Floating point value
+fBodyAccJerk.meanFreq.X    Floating point value
+fBodyAccJerk.meanFreq.Y    Floating point value
+fBodyAccJerk.meanFreq.Z    Floating point value    
+fBodyGyro.mean.X    Floating point value
+fBodyGyro.mean.Y    Floating point value
+fBodyGyro.mean.Z    Floating point value
+fBodyGyro.meanFreq.X    Floating point value
+fBodyGyro.meanFreq.Y    Floating point value
+fBodyGyro.meanFreq.Z    Floating point value
+fBodyAccMag.mean    Floating point value
+fBodyAccMag.meanFreq    Floating point value
+fBodyBodyAccJerkMag.mean    Floating point value
+fBodyBodyAccJerkMag.meanFreq    Floating point value
+fBodyBodyGyroMag.mean    Floating point value
+fBodyBodyGyroMag.meanFreq    Floating point value
+fBodyBodyGyroJerkMag.mean    Floating point value
+fBodyBodyGyroJerkMag.meanFreq    Floating point value
+tBodyAcc.std.X    Floating point value
+tBodyAcc.std.Y    Floating point value
+tBodyAcc.std.Z    Floating point value
+tGravityAcc.std.X    Floating point value
+tGravityAcc.std.Y    Floating point value
+tGravityAcc.std.Z    Floating point value
+tBodyAccJerk.std.X    Floating point value
+tBodyAccJerk.std.Y    Floating point value
+tBodyAccJerk.std.Z    Floating point value
+tBodyGyro.std.X    Floating point value
+tBodyGyro.std.Y    Floating point value
+tBodyGyro.std.Z    Floating point value
+tBodyGyroJerk.std.X    Floating point value
+tBodyGyroJerk.std.Y    Floating point value
+tBodyGyroJerk.std.Z    Floating point value
+tBodyAccMag.std    Floating point value
+tGravityAccMag.std    Floating point value
+tBodyAccJerkMag.std    Floating point value
+tBodyGyroMag.std    Floating point value
+tBodyGyroJerkMag.std    Floating point value
+fBodyAcc.std.X    Floating point value
+fBodyAcc.std.Y    Floating point value
+fBodyAcc.std.Z    Floating point value
+fBodyAccJerk.std.X    Floating point value
+fBodyAccJerk.std.Y    Floating point value
+fBodyAccJerk.std.Z    Floating point value
+fBodyGyro.std.X    Floating point value
+fBodyGyro.std.Y    Floating point value
+fBodyGyro.std.Z    Floating point value
+fBodyAccMag.std    Floating point value
+fBodyBodyAccJerkMag.std    Floating point value
+fBodyBodyGyroMag.std    Floating point value
+fBodyBodyGyroJerkMag.std    Floating point value
+    
